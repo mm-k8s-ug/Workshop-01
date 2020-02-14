@@ -4,7 +4,7 @@
 ## Prequesties
 
 - [Docker](https://docs.docker.com/install/)
-- [Kind](https://github.com/kubernetes-sigs/kind)
+- [Kind](https://github.com/kubernetes-sigs/kind#installation-and-usage)
 Please make sure to up and running KIND on docker before workshop.
 
 
