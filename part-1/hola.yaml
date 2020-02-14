@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hola
+spec:
+  containers:
+  - image: quay.io/dther/hola
+    name: hola
+    ports:
+    - containerPort: 8080
+      protocol: TCP

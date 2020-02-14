@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hola-ingress
+  annotations:
+     nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite ^/static/(.*)$ /hola/static/$1 redirect;
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /hola(/|$)(.*)
+        backend:
+          serviceName: hola-svc
+          servicePort: 8080
+
