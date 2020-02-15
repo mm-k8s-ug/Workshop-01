@@ -4,7 +4,7 @@ metadata:
   name: hola-svc
 spec:
   selector:
-    app: bar
+    app: hola
   ports:
   # Default port used by the image
-  - port: 5678
+  - port: 8080

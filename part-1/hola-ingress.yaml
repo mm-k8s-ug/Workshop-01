@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: hola-ingress
   annotations:
-     nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/configuration-snippet: |
       rewrite ^/static/(.*)$ /hola/static/$1 redirect;
 spec:
@@ -14,4 +14,3 @@ spec:
         backend:
           serviceName: hola-svc
           servicePort: 8080
-
