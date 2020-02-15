@@ -1,15 +1,6 @@
 
 # Kubernetes User Group Myanmar Workshop
 
-## Prequesties
-
-- [Docker](https://docs.docker.com/install/)
-- [Kind](https://github.com/kubernetes-sigs/kind#installation-and-usage)
-Please make sure to up and running KIND on docker before workshop.
-
-
-
-## WorkShop Links
 * Workshop [Part-1](https://blog.k8smm.org/kind) (kind)
 
 ![alt text](./part-1/logo.png "k8smm")
